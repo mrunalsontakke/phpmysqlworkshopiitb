@@ -1,9 +1,9 @@
 <?php
 
-$num=array(11,23,72,44);
+$number =array(11,23,72,44);
 for($i=0;$i<4;$i++)
   {
-    $res=$num[$i];
+    $res=$number[$i];
     if(($res%2)==0)
       echo "The number ".$res." is an even number.<br>";
     else
