@@ -1,5 +1,5 @@
 <html>
- <form action='q2_email.php' method=''>
+ <form action='q2_email.php' method='POST'>
    <h1>Feedback Form </h1>
    Name :<input type='text' name='name'><br><br>
    Email Id :<input type='text' name='emailid'><br><br>
