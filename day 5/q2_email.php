@@ -1,4 +1,4 @@
-<html>
+
  <form action='q2_email.php' method='POST'>
    <h1>Feedback Form </h1>
    Name :<input type='text' name='name'><br><br>
@@ -7,9 +7,8 @@
    <input type='submit' name='submit' value='Send'>
   
   </form>
-</html>
 
-</php
+<?php
 
 if($_POST['submit'])
 {
