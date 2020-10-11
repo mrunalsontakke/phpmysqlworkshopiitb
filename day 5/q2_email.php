@@ -5,7 +5,8 @@
    Email Id :<input type='text' name='emailid'><br><br>
    Feedback :<textarea name='feedback'></textarea><p>
    <input type='submit' name='submit' value='Send'>
- </form>
+  
+  </form>
 </html>
 
 </php
@@ -28,7 +29,7 @@ if($_POST['submit'])
   mail($useremail,$subject,$usermessage,$headers);
 
   //mail to admin
-  mail($adminmail," Feedback from:$name<br><br>$feedback",$header1);
+  mail($adminmail,$subject," Feedback from:$name<br><br>$feedback",$header1);
 }
 else
 {
