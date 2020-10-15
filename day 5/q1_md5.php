@@ -14,7 +14,7 @@ require("connectdata1.php");
 @$username=$_POST['username'];
 @$password=$_POST['password'];
 
-if($_post['login'])
+if($_POST['login'])
 {
    if($username && $password)
    {
