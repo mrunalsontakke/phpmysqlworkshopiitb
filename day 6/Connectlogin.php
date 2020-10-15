@@ -1,0 +1,9 @@
+<?php
+error_reporting(0);
+
+// Create connection
+$conn = mysqli_connect("localhost","root","","phplogin") or die("Connection failed: ".mysqli_connect_error());
+
+echo "Connected !<br>";
+
+?>
