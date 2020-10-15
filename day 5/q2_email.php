@@ -1,14 +1,14 @@
-<html>
+
  <form action='q2_email.php' method='POST'>
    <h1>Feedback Form </h1>
    Name :<input type='text' name='name'><br><br>
    Email Id :<input type='text' name='emailid'><br><br>
    Feedback :<textarea name='feedback'></textarea><p>
    <input type='submit' name='submit' value='Send'>
- </form>
-</html>
+  
+  </form>
 
-</php
+<?php
 
 if($_POST['submit'])
 {
@@ -28,7 +28,7 @@ if($_POST['submit'])
   mail($useremail,$subject,$usermessage,$headers);
 
   //mail to admin
-  mail($adminmail," Feedback from:$name<br><br>$feedback",$header1);
+  mail($adminmail,$subject," Feedback from:$name<br><br>$feedback",$header1);
 }
 else
 {
